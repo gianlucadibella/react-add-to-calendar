@@ -98,5 +98,8 @@
     "eslint": "eslint **/*.js",
     "prepublish": "npm run build",
     "codecov": "cat coverage/*/lcov.info | ./node_modules/codecov/bin/codecov"
-  }
+  },
+  "precommit": [
+    "build"
+  ]
 }
